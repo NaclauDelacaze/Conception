@@ -1,108 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <span class="big-circle"></span>
+      <img src="img/shape.png" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            dolorum adipisci recusandae praesentium dicta!
+          </p>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-
-        <!-- bootstrap -->
-
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <title>Document</title>
-    </head>
-
-
-    <style>
-        .slideshow {
-        width: 350px;
-        height: 200px;
-        overflow: hidden;
-        border: 3px solid #F2F2F2;
-        }
-
-        .slideshow ul {
-            /* 4 images donc 4 x 100% */
-        width: 400%;
-        height: 200px;
-        padding:0; margin:0;
-        list-style: none;
-        }
-        .slideshow li {
-        float: left;
-        }
-    </style>
-
-    <body style="text-align: center;">
-    
-            
-        
-        <div class="field">
-            <label class="label">Username</label>
-            <div class="control has-icons-left has-icons-right">
-            <input class="input is-success" type="text" placeholder="Text input" id="username">
-            <span class="icon is-small is-left">
-                <i class="fas fa-user"></i>
-            </span>
-            <span class="icon is-small is-right">
-                <i class="fas fa-check"></i>
-            </span>
+          <div class="info">
+            <div class="information">
+              <img src="img/location.png" class="icon" alt="" />
+              <p>92 Cherry Drive Uniondale, Paris 12</p>
             </div>
-        </div>
-        
-        <div class="field">
-            <label class="label">Email</label>
-            <div class="control has-icons-left has-icons-right">
-            <input class="input is-danger" type="email" placeholder="Email input" id="email" >
-            <span class="icon is-small is-left">
-                <i class="fas fa-envelope"></i>
-            </span>
-            <span class="icon is-small is-right">
-                <i class="fas fa-exclamation-triangle"></i>
-            </span>
+            <div class="information">
+              <img src="img/email.png" class="icon" alt="" />
+              <p>glodie@gmail.com</p>
             </div>
-        </div>
-        <div class="field">
-            <label class="label">Message</label>
-            <div class="control">
-            <textarea class="textarea" placeholder="quel est votre animal preferé ?"  id="message"></textarea>
+            <div class="information">
+              <img src="img/phone.png" class="icon" alt="" />
+              <p>123-456-789</p>
             </div>
-        </div>
-        <div class="field">
-            <label class="label">Mdp</label>
-            <div class="control">
-                <input class="input is-link" type="password" placeholder="mdp" id="mdp">
+          </div>
+
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
             </div>
-        </div>
-        
-        
-        <div class="field is-grouped">
-            <div class="control">
-            <button class="button is-link" id="subm">Submit</button>
-            </div>
-            <div class="control">
-            <button class="button is-link is-light">Cancel</button>
-            </div>
+          </div>
         </div>
 
-        <hr>
-        <h2> Connection</h2>
-        <hr>
-        <input type="text" id="email2" placeholder="votre identifiant">
-        <input type="text"  id="password2" placeholder="votre mdp">
-        <input  type="text" placeholder="quel est votre animal preferé" id="famillier">
-        <button  id="btn2">  connection</button><br><br><br><br><br><br>
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
 
-
-
-
+          <form action="index.html" autocomplete="off">
+            <h3 class="title">Contact us</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input" />
+              <label for="">Username</label>
+              <span>Username</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input" />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="input" />
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Send" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
 
     </body>
 
 
-<script src="exositerencontre.js"></script>
+<script src="Emarket.js"></script>
 
 </html>
