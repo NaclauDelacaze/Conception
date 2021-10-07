@@ -1,10 +1,3 @@
-/*Coverflow Image Gallery By Dynamic Drive
-* Created: Jan 14th', 2015 by DynamicDrive.com.
-* Dependencies: jQuery, Sly scrolling lib https://github.com/darsain/sly
-* Visit http://www.dynamicdrive.com/ for full source code
-*/
-
-
 document.getElementsByTagName('html')[0].className += ' ' +
 	("ActiveXObject" in window? 'ie' : 'no-ie')
 
