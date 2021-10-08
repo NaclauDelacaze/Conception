@@ -55,14 +55,19 @@ $(document).ready(function(){
             
                 // document.body.innerHTML="<h1> Bienvenue sur le site Savana</h1><br>"
                 
+
                 // document.write('<h1> Bienvenue sur le site Savana</h1><br>')
                 // document.write('<a href="./page2.html"><button id="btn3">Cliquez-moi!</button></a>')
               
                 window.open("./page2.html")
-                              
+                         
+                document.write('<h1> Bienvenue sur le site Savana</h1><br>')
+                document.write('<a href="./page2.html"><button id="btn3">Cliquez-moi!</button></a>')
+              
+
                 }else{
 
-                alert("veuillez ressaisir vos données!!")
+                alert("veuillez ressaisir vos données!")
             }        
             
         }
