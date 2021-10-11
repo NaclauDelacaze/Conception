@@ -30,7 +30,7 @@ $(document).ready(function(){
             Users.utilisateur.password.push(password)
 
         }else{
-            console.log("rempli les champs")
+            console.log("remplir les champs")
         }
     
 
