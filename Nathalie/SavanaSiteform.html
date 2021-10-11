@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing : Log In</title>
+
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="SavanaSite.css">
+
+</head>
+<body>
+
+    <!-- Start of nav section (the dashboard)-->
+
+    <nav class="navbar">
+        <div class="nav">
+            <img src="images/Savanalogo.png" class="brand-logo" alt="">
+            <div class="nav-items">
+                <div class="search">
+                    <input type="text" class="search-box" 
+                    placeholder="Search brands, produits ">
+                    <button class="search-btn">Search</button>
+                </div>
+                <a href="#"><img src="images/user.png" alt=""></a>
+                <a href="#"><img src="images/C2.png" alt=""></a>
+                <a href="#"><img src="images/cart2.png" alt=""></a>
+            </div>
+        </div>
+        <ul class="links-container">
+            <li class="link-item"><a href="#" class="link">Home</a></li>
+            <li class="link-item"><a href="#" class="link">Clothing</a></li>
+            <li class="link-item"><a href="#" class="link">Cell phone</a></li>
+            <li class="link-item"><a href="#" class="link">Support</a></li>
+            <li class="link-item"><a href="#" class="link">home appliance</a></li>
+            <li class="link-item"><a href="#" class="link">Informatic</a></li>
+        </ul>
+    </nav>
+<!-- End of nav section -->
+
+    <img src="images/loader.gif" class="loader" alt="">
+
+    <div class="alert-box">
+        <img src="images/error.png" class="alert-img" alt="">
+        <p class="alert-msg">Error message</p>
+    </div>
+
+    <fieldset class="container">
+        <legend><img src="images/SavanaLogo2.png" class="logo" alt=""></legend>
+        
+        <center>
+        <!-- <div class="container"> -->
+            <div>
+                <input type="email" autocomplete="off" id="email" placeholder="email">
+                <input type="password" autocomplete="off" id="password" placeholder="password">
+                <button class="submit-btn">log in</button>
+                </div>
+            <a href="/signup" class="link">don't have an account ?<br> 
+                Create one !
+            </a>
+        <!-- </div> -->
+        </center>
+
+    </fieldset>
+
+    <script src="Savanatoken.js"></script>
+    <script src="Savanaform.js"></script>
+    
+</body>
+</html>
