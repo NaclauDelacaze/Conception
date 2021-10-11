@@ -1,11 +1,11 @@
-@import 'Savana-nav.css';
-@import 'Savana-footer.css';
+@import 'SavanaSite-nav.css';
+@import 'SavanaSite-footer.css';
 
 
 .hero-section{
     width: 100%;
     height: calc(100vh - 120px);
-    background-image: url('images/large.jpg');
+    background-image: url('images/Savanalogosite1.jpg');
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -21,7 +21,8 @@
 .hero-section .sub-heading{
     margin-top: 10px;
     text-align: center;
-    color: #fff;
+    color: black;
+    font-family: lobster;
     text-transform: capitalize;
     font-size: 35px;
     font-weight: 300;
