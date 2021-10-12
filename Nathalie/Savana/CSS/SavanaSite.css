@@ -1,11 +1,11 @@
-@import 'SavanaSite-nav.css';
-@import 'SavanaSite-footer.css';
+@import '../CSS/SavanaSite-nav.css';
+@import '../CSS/SavanaSite-footer.css';
 
 
 .hero-section{
     width: 100%;
     height: calc(100vh - 120px);
-    background-image: url('images/Savanalogosite1.jpg');
+    background-image: url('../images/sound.jpg'); 
     background-size: cover;
     display: flex;
     justify-content: center;
