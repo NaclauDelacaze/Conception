@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+/* Start of logo nav */
+.navbar{
+    position: sticky;
+    top: 0;  left: O;
+    width: 100%;
+    background: hsl(51, 42%, 87%);
+    z-index: 9;
+}
+
+.nav{
+    padding: 10px 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand-logo{
+    height: 70px;
+}
+/* End of logo nav */
+
+/* search bar */
+.nav-items{
+    display: flex;
+    align-items: center; 
+    /* background-color: #f8f0c6; */
+}
+
+.search{
+    width: 500px;
+    display: flex;
+}
+
+
+.search-box{
+    width: 80%;
+    height: 40px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid rgb(23, 109, 87);
+    text-transform: capitalize;
+    background: none;
+    color: #a9a9a9;
+    outline: none;
+}
+
+.search-btn{
+    width: 20%;
+    height: 40px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background: rgb(23, 109, 87);
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.search-box::placeholder{
+    color: #a9a9a9;
+}
+
+/* search bar */
+
+.nav-items a{
+    margin-left: 20px;
+    background: hsl(51, 42%, 87%);
+}
+
+.nav-items a img{
+    width: 40px; 
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid rgb(23, 109, 87);
+    /* background: hsl(51, 42%, 87%);  */
+}
+
+.links-container{
+    width: 100%;
+    display: flex;
+    padding: 10px 10vw;
+    justify-content: center;
+    list-style: none;
+    /* border: 1px solid rgb(23, 109, 87); */
+}
+
+.link{
+    width: 80%;
+    height: 40px;
+    text-transform: capitalize;
+    padding: 0 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: whitesmoke;
+    opacity: 0,5;
+    transition: .5s;
+    background-color:  rgb(23, 109, 87);
+    font-size: 15px;
+    /* background: hsl(51, 42%, 87%); */
+    border-top-right-radius: 10px;
+    
+    /* border-bottom-right-radius: 10px; */
+}
+
+.link:hover{
+    color: hsl(166, 33%, 59%);
+    opacity: 1;
+}
