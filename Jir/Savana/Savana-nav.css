@@ -5,10 +5,10 @@
     font-family: 'roboto', sans-serif;
 }
 
-/* Start of logo nav */
 .navbar{
     position: sticky;
-    top: 0;  left: O;
+    top: 0;
+    left: 0;
     width: 100%;
     background: #f5f5f5;
     z-index: 9;
@@ -23,19 +23,16 @@
 .brand-logo{
     height: 60px;
 }
-/* End of logo nav */
 
-/* search bar */
 .nav-items{
     display: flex;
-    align-items: center; 
+    align-items: center;
 }
 
 .search{
-    width: 500PX;
+    width: 500px;
     display: flex;
 }
-
 
 .search-box{
     width: 80%;
@@ -55,8 +52,9 @@
     height: 40px;
     padding: 10px 20px;
     border: none;
+    outline: none;
     cursor: pointer;
-    background: #1ABC9C;
+    background: #383838;
     color: #fff;
     text-transform: capitalize;
     font-size: 15px;
@@ -68,14 +66,14 @@
     color: #a9a9a9;
 }
 
-/* search bar */
-
 .nav-items a{
     margin-left: 20px;
+    position: relative;
 }
 
 .nav-items a img{
-    width: 30px;  
+    width: 30px;
+    cursor: pointer;
 }
 
 .links-container{
@@ -93,7 +91,7 @@
     margin: 0 5px;
     text-decoration: none;
     color: #383838;
-    opacity: 0,5;
+    opacity: 0.5;
     transition: .5s;
 }
 
@@ -101,3 +99,50 @@
     opacity: 1;
 }
 
+.login-logout-popup{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+    top: 40px;
+    width: 200px;
+    transition: .5s;
+    border: 2px solid #f5f5f5;
+}
+
+.login-logout-popup::after{
+    content: '';
+    position: absolute;
+    top: -7.5px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.account-info{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+#user-btn{
+    padding: 10px;
+    background: #383838;
+    color: #fff;
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.hide{
+    opacity: 0;
+    pointer-events: none;
+}
