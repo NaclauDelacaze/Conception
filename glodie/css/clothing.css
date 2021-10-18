@@ -1,8 +1,126 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+@import '../css/nav.css';
+@import '../css/footer.css';
+
+
+/* grace au etoile je dis bien que cela s'accorde a toute la page  */
+* {
+  box-sizing: border-box;
+}
+
+/* ici c'est le style de toute la page , */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* voici le header  principal avec la couleur de fond qui va avec */
+/*.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}*/
+
+/* ici on defini la taille du h1 qui ce de trouve dans le header de cette façon */
+.header h1 {
+  font-size: 40px;
+}
+
+/*  ici c'est ma navbard et grace au -webkit-sticky je definis mon petit effet */
+.navbar {
+  overflow: hidden;
+  background-color: #F3EFD7;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/*  ici je defini le style des lien qui ce trouve dans ma navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+  
+/*  allignement de tous les lien de class 'right' vers la droite */
+.navbar a.right {
+  float: right;
+}
+
+/* ici on change la couleur du a survolé */
+.navbar a:hover {
+  background-color: #ddddddc4;
+  color: black;
+}
+
+/* Effet du lien  de la class 'active' lorsque je met ma souris dessus  */
+.navbar a.active {
+  background-color: rgb(102, 100, 100);
+  color: white;
+}
+
+.hero-section{
+  width: 100%;
+  height: calc(100vh - 120px);
+  background-image: url('../images/sound.jpg'); 
+  background-size: cover;
+  background-color: hsl(50, 49%, 88%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section .logo{
+  height: 150px;
+  display: block;
+  margin: auto;
+  padding-top: 20px;
+  /* background-color: #f8f0c6; */
+}
+
+.hero-section .sub-heading{
+  margin-top: 10px;
+  text-align: center;
+  color: rgb(23, 109, 87);
+  font-family: lobster;
+  text-transform: capitalize;
+  font-size: 35px;
+  font-weight: 300;
+}
+
+
+/* Ici, j'utilise un effet d’animation de texte brillant
+h1 {
+  position: relative;
+  font-family:lobster, sans-serif;
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, rgb(23, 109, 87), #fff, rgb(23, 109, 87));
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 5s infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+} */
+
+@keyframes animate {
+  0% {
+  background-position: -500%;
+  }
+  100% {
+  background-position: 500%;
+  }
+}
+
 
 :root{
   --black:#050505;
-  --orange:#ff9f1a;
+  --green:#068b7a;
 }
 
 *{
@@ -639,7 +757,7 @@ header .icons a:hover{
 }
 
 .footer .box-container .credit span{
-  color:var(--orange);
+  color:var(--green);
 }
 
 

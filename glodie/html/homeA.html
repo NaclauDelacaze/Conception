@@ -4,15 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>complete responsive ecommerce website design tutorial</title>
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <!-- custom css file link  -->
+     <!-- font awesome cdn link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+     <!-- custom css file link -->
     <link rel="stylesheet" href="../css/homeA.css">
     <link rel="stylesheet" href="../css/index.css">
 
 </head>
 <body>
 
+<!-- Start of nav section (the dashboard)-->
+<nav class="navbar">
+    <div class="nav">
+        <img src="../images/logoO.png" class="brand-logo" alt="">
+        <div class="nav-items">
+            <div class="search">
+                <input type="text" class="search-box" 
+                placeholder="Search brands, produits ">
+                <button class="search-btn">Search</button>
+            </div>
+            <a href="../html/login.html"><img src="../images/user.png" alt=""></a>
+            <a href="#"><img src="../images/C2.png" alt=""></a>
+            <a href="#"><img src="../images/cart2.png" alt=""></a>
+        </div>
+    </div>
+    <ul class="links-container">
+        <li class="link-item"><a href="../index.html" class="link">Home</a></li>
+        <li class="link-item"><a href="../html/clothing.html" class="link">Clothing</a></li>
+        <li class="link-item"><a href="../html/phone.html" class="link">Cell phone</a></li>
+        <li class="link-item"><a href="../html/Support.html" class="link">Support</a></li>
+        <li class="link-item"><a href="../html/homeA.html" class="link">home appliance</a></li>
+        <li class="link-item"><a href="../html/pc.html" class="link">Computer</a></li>
+    </ul>
+</nav>
+<!-- End of nav section -->
 
 <!-- home section starts  -->
 <section class="home" id="home">
@@ -355,14 +386,16 @@
         <div class="box">
             <h3>quick links</h3>
             <a href="#">home</a>
-            <a href="#">products</a>
-            <a href="#">featured</a>
-            <a href="#">review</a>
+            <a href="../html/clothing.html">Clothing</a>
+            <a href="../html/phone.html">Cell</a>
+            <a href="../html/Support.html">Support</a>
+            <a href="../html/homeA.html">Home Appliance</a>
+            <a href="../html/pc.html">Computer</a>
         </div>
 
         <div class="box">
             <h3>extra links</h3>
-            <a href="#">my account</a>
+            <a href="../html/login.html">my account</a>
             <a href="#">my favorite</a>
             <a href="#">my orders</a>
             <a href="#">newsletter</a>

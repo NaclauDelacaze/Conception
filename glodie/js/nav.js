@@ -52,7 +52,7 @@ const createNav = () => {
     `;
 }
 
-createNav();
+// createNav();
 
 // nav popup
 const userImageButton = document.querySelector('#user-img');
@@ -64,7 +64,7 @@ userImageButton.addEventListener('click', () => {
     userPopup.classList.toggle('hide');
 })
 
-window.onload = () => {
+$(window).load(function(){
     let user = JSON.parse(sessionStorage.user || null);
     if(user != null){
         // means user is logged in
@@ -82,4 +82,4 @@ window.onload = () => {
             location.href = '/login';
         })
     }
-}
+})

@@ -3,7 +3,7 @@ footer{
     width: 100%;
     padding: 40px 10vw;
     padding-bottom: 80px;
-    background: #383838;
+    background: #58585410;
 }
 
 .footer-content{
@@ -33,7 +33,7 @@ footer{
 .category-title{
     grid-column: span 2;
     text-transform: capitalize;
-    color: #fff;
+    color: rgba(255, 255, 255, 0.26);
     font-size: 20px;
     margin-bottom: 20px;
 }
@@ -41,11 +41,11 @@ footer{
 .category .footer-link{
     text-decoration: none;
     text-transform: capitalize;
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(85, 80, 80, 0.75);
 }
 
 .footer-link:hover{
-    color: #fff;
+    color: rgba(156, 147, 147, 0.116);
 }
 
 .footer-title, .info{
@@ -56,7 +56,7 @@ footer{
 
 .footer-title{
     margin-top: 80px;
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 
 .footer-social-container{
@@ -66,7 +66,7 @@ footer{
 }
 
 .social-link{
-    color: #fff;
+    color: rgb(17, 165, 185);
     margin-left: 20px;
     text-transform: capitalize;
 }
@@ -82,6 +82,6 @@ footer{
     left: 0;
     bottom: 0;
     text-align: center;
-    color: #fff;
+    color: rgb(97, 89, 89);
     background: rgba(0, 0, 0, 0.2);
 }

@@ -14,8 +14,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!-- custom css file link -->
-    <link rel="stylesheet" href="css/index.css">
-    
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/nav.css">
 
 </head>
 <body>
@@ -23,37 +23,38 @@
 <!-- Start of nav section (the dashboard)-->
 <nav class="navbar">
     <div class="nav">
-        <img src="images/logoO.png" class="brand-logo" alt="">
+        <img src="./images/logoO.png" class="brand-logo" alt="">
         <div class="nav-items">
             <div class="search">
                 <input type="text" class="search-box" 
                 placeholder="Search brands, produits ">
                 <button class="search-btn">Search</button>
             </div>
-            <a href=""><img src="images/user.png" alt=""></a>
-            <a href="#"><img src="images/C2.png" alt=""></a>
-            <a href="#"><img src="images/cart2.png" alt=""></a>
+            <a href="./html/login.html"><img src="./images/user.png" alt=""></a>
+            <a href="./html/search.html"><img src="./images/C2.png" alt=""></a>
+            <a href="#"><img src="./images/cart2.png" alt=""></a>
         </div>
     </div>
     <ul class="links-container">
-        <li class="link-item"><a href="#" class="link">Home</a></li>
+        <li class="link-item"><a href="./index.html" class="link">Home</a></li>
         <li class="link-item"><a href="./html/clothing.html" class="link">Clothing</a></li>
-        <li class="link-item"><a href="#" class="link">Cell phone</a></li>
-        <li class="link-item"><a href="#" class="link">Support</a></li>
+        <li class="link-item"><a href="./html/phone.html" class="link">Cell phone</a></li>
+        <li class="link-item"><a href="./html/Support.html" class="link">Support</a></li>
         <li class="link-item"><a href="./html/homeA.html" class="link">home appliance</a></li>
-        <li class="link-item"><a href="./css/pcstyle.css" class="link">PC</a></li>
+        <li class="link-item"><a href="./html/pc.html" class="link">Computer</a></li>
     </ul>
 </nav>
 <!-- End of nav section -->
 
 <!-- hero section -->
-        <header class="hero-section">
-           <div class="content">
-               <!-- <img src="images/Savanalogosite1.jpg" class="logo" alt=""> -->
-               <p class="sub-heading">Here, you'll found best products that you need</p>
-           </div>
-        </header>
+    <header class="hero-section">
+       <div class="content">
+           <img src="./images/logoO.png" class="logo" alt="">
+           <h1 class="sub-heading"><b>Here, you'll found best products that you need</b></h1>
+       </div>
+    </header>
 <!-- cards-container bestselling-->
+
 <section class="product">
     <h2 class="product-category">best selling</h2>
     <button class="pre-btn"><img src="images/Arrow1.png" alt=""></button>
@@ -110,7 +111,7 @@
         <div class="product-card">
             <div class="product-image">
                 <span class="discount-tag">50% off</span>
-                <img src="images/9.webp" class="product-thumb" alt="">
+                <img src="images/produit10.webp" class="product-thumb" alt="">
                 <button class="card-btn">add to whislist</button>
             </div>
             <div class="product-info">
@@ -172,23 +173,31 @@
    <!-- Start of the collections -->
    <section class="collection-container">
     <a href="#" class="collection">
-        <img src="images/v.webp" alt="">
-        <p class="collection-title">women <br> apparels</p>
-    </a>
-    <a href="#" class="collection">
-        <img src="images/fh.webp" alt="">
-        <p class="collection-title">men <br> apparels</p>
+        <img src="images/clothing.png" alt="">
+        <p class="collection-title">Clothing<br> apparels</p>
     </a>
     <a href="#" class="collection">
         <img src="images/17.webp" alt="">
-        <p class="collection-title">home <br> apparels</p>
+        <p class="collection-title">Home<br> apparels</p>
     </a>
+    <!-- <a href="#" class="collection">
+        <img src="images/I2.jpg" alt="">
+        <p class="collection-title">Cell phone<br> apparels</p>
+    </a>
+    <a href="#" class="collection">
+        <img src="images/lav.jpg" alt="">
+        <p class="collection-title">Support Appliance<br> apparels</p>
+    </a>
+    <a href="#" class="collection">
+        <img src="images/rob3.jpg" alt="">
+        <p class="collection-title">Pc<br> apparels</p>
+    </a> -->
    </section>
    <!-- End of the collections -->
    
-   <!-- card-container women -->
+   <!-- card-container Clothing -->
    <section class="product">
-    <h2 class="product-category">women</h2>
+    <h2 class="product-category">Clothing</h2>
     <button class="pre-btn"><img src="images/Arrow1.png" alt=""></button>
     <button class="nxt-btn"><img src="images/Arrow1.png" alt=""></button>
     <div class="product-container">
@@ -288,15 +297,15 @@
                 <span class="price">$20</span> <span class="actual-price">$40</span>
             </div>
         </div>
-    </div>
-   </section>
+    <!-- </div>
+   </section> -->
    
    <!-- card-container Men-->
-   <section class="product">
+   <!-- <section class="product">
        <h2 class="product-category">Men</h2>
        <button class="pre-btn"><img src="images/Arrow1.png" alt=""></button>
-       <button class="nxt-btn"><img src="images/Arrow1.png" alt=""></button>
-       <div class="product-container">
+       <button class="nxt-btn"><img src="images/Arrow1.png" alt=""></button> -->
+       <!-- <div class="product-container"> -->
            <div class="product-card">
                <div class="product-image">
                    <span class="discount-tag">50% off</span>
@@ -396,9 +405,9 @@
        </div>
    </section>
    
-   <!-- card-container PC and Mobile -->
+   <!-- card-container Cell Phone -->
    <section class="product">
-   <h2 class="product-category">PC and Mobile</h2>
+   <h2 class="product-category">Cell Phone</h2>
    <button class="pre-btn"><img src="images/Arrow1.png" alt=""></button>
    <button class="nxt-btn"><img src="images/Arrow1.png" alt=""></button>
    <div class="product-container">
@@ -438,7 +447,7 @@
             <span class="price">$450</span> <span class="actual-price">$900</span>
         </div>
     </div>
-    <div class="product-card">
+    <!-- <div class="product-card">
         <div class="product-image">
             <span class="discount-tag">50% off</span>
             <img src="images/Aspirateur.jpg" class="product-thumb" alt="">
@@ -448,8 +457,8 @@
             <h2 class="product-brand">brand</h2>
             <p class="product-short-des">A short line about the dress..</p>
             <span class="price">$60</span> <span class="actual-price">$120</span>
-        </div>
-    </div>
+        </div> -->
+    <!-- </div> -->
     <div class="product-card">
         <div class="product-image">
             <span class="discount-tag">50% off</span>
@@ -478,67 +487,53 @@
    </section>
 
 <!-- Start of footer -->
-         <footer>
-             <div class="footer-content">
-                 <img src="images/" class="logo" alt="">
-                 <div class="footer-ul-container">
-                  <ul class="category">
-                      <li class="category-title">women</li>
-                      <li><a href="#" class="footer-link">t-shirt</a></li>
-                      <li><a href="#" class="footer-link">jeans</a></li>
-                      <li><a href="#" class="footer-link">shoes</a></li>
-                      <li><a href="#" class="footer-link">casuals</a></li>
-                      <li><a href="#" class="footer-link">sports</a></li>
-                   </ul>
-                   <ul class="category">
-                    <li class="category-title">Men</li>
-                    <li><a href="#" class="footer-link">t-shirt</a></li>
-                    <li><a href="#" class="footer-link">jeans</a></li>
-                    <li><a href="#" class="footer-link">shoes</a></li>
-                    <li><a href="#" class="footer-link">casuals</a></li>
-                    <li><a href="#" class="footer-link">sports</a></li>
-                 </ul>
-                 <ul class="category">
-                    <li class="category-title">phone</li>
-                    <li><a href="#" class="footer-link">Samsung</a></li>
-                    <li><a href="#" class="footer-link">Iphone</a></li>
-                    <li><a href="#" class="footer-link">wiko</a></li>
-                    <li><a href="#" class="footer-link">Huawei</a></li>
-                    <li><a href="#" class="footer-link">Google</a></li>
-                    <li><a href="#" class="footer-link">Oneplus</a></li>
-                 </ul>
-                 </div>   
-             </div>
-<!-- Start of footer contact-->
-             <p class="footer-title">About Company</p>
-                  <p class="Info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam corporis, 
-                      sint temporibus at corrupti autem voluptatem voluptatibus soluta amet vero, praesentium, 
-                      iusto illum officia! Ipsa est consequuntur cumque sit tempore aspernatur ullam similique expedita. 
-                      Fugit fuga ducimus voluptatum aliquid aut sint, dolorem maxime vitae aspernatur esse repellendus placeat, 
-                      porro repellat ipsa culpa iusto iste sapiente sequi veniam quis repudiandae optio pariatur totam. 
-                      Eum dolor sunt sed quos tempora error, nesciunt similique repudiandae ipsa maiores necessitatibus earum quo 
-                      voluptatem et animi tenetur eius saepe quae illum culpa ratione praesentium. Minima voluptatem recusandae molestiae 
-                      accusamus deserunt obcaecati nostrum ipsam sint, saepe nulla.</p>
-                   <p class="info">support emails - help@emarket.com, 
-                       customersupport@Savana.com</p>
-                   <p class="Info">telephone - 01 45 67 90 67</p>
-                   <div class="footer-social-container"></div>
-                   <div>
-                       <a href="#" class="social-link">terms and services</a>
-                       <a href="#" class="social-link">privacy page</a>
-                   </div>
-                   <div>
-                    <a href="#" class="social-link">instagram</a>
-                    <a href="#" class="social-link">facebook</a>
-                    <a href="#" class="social-link">twitter</a>
-                    <a href="#" class="social-link">linkindin</a>
-                </div>
-                <p class="footer-credit">E-Commerce, Best apparels online </p>
-        </footer>
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>our stores</h3>
+            <a href="#">india</a>
+            <a href="#">USA</a>
+            <a href="#">japan</a>
+            <a href="#">paris</a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="./html/clothing.html">Clothing</a>
+            <a href="./html/phone.html">Cell</a>
+            <a href="./html/Support.html">Support</a>
+            <a href="./html/homeA.html">Home Appliance</a>
+            <a href="./html/pc.html">Computer</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="../glodie/html/login.html">my account</a>
+            <a href="#">my favorite</a>
+            <a href="#">my orders</a>
+            <a href="#">newsletter</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">twitter</a>
+            <a href="#">instagram</a>
+            <a href="#">linkedin</a>
+        </div>
+
+        <div class="credit">created by <span> mr. web designer </span> | all rights reserved</div>
+
+    </div>
+
+</section>
 <!-- End of footer -->
 
 <!-- custom js file -->
-<script src="js/index.js"></script>
-<script src="js/nav.js"></script>
+<script src="./js/index.js"></script>
+<script src="./js/nav.js"></script>
 </body>
 </html>
