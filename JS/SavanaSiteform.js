@@ -1,12 +1,3 @@
-window.onload = () => {
-    if(sessionStorage.user){
-        user = JSON.parse(sessionStorage.user);
-        if(compareToken(user.authToken, user.email)){
-            location.replace('/');
-        }
-    }
-}
-
 const loader = document.querySelector('.loader');
 
 // select inputs 
@@ -18,9 +9,17 @@ const number = document.querySelector('#number') || null;
 const tac = document.querySelector('#terms-and-cond') || null;
 const notification = document.querySelector('#notification') || null;
 
+$(window).load(function () {
+    if(sessionStorage.user){
+        user = JSON.parse(sessionStorage.user);
+        if(compareToken(user.authToken, user.email)){
+            location.replace('/');
+        }
+    }
+
 submitBtn.addEventListener('click', () => {
     if(name != null){ // sign up page
-        if(name.value.length < 3){
+        if(name.value.length <= 3){
             showAlert('name must be 3 letters long');
         } 
         
@@ -72,4 +71,5 @@ submitBtn.addEventListener('click', () => {
             })
         }
     }
+})
 })

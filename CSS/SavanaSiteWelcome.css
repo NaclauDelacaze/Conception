@@ -1,0 +1,79 @@
+@import '../CSS/SavanaSite-nav.css';
+/* @import '../CSS/SavanaSite.css'; */
+
+.hero-section{
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-image: url('../images/sound.jpg'); 
+    background-size: cover;
+    background-color: hsl(50, 49%, 88%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section .brand-logo2{
+    height: 300px;
+    width: 280px;
+    display: block;
+    margin: auto;
+    padding-top: 20px;
+    /* background-color: #f8f0c6; */
+}
+
+.hero-section .sub-heading{
+    margin-top: 10px;
+    text-align: center;
+    color: #0d5744;
+    font-family: algerian;
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: 300;
+}
+
+
+/* Ici, j'utilise un effet d’animation de texte brillant */
+h1 {
+    position: relative;
+    font-family:algerien;
+    font-size: 60px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #0d5744, #7ce0c7, #0d5744);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 5s infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+
+@keyframes animate {
+    0% {
+    background-position: -500%;
+    }
+    100% {
+    background-position: 500%;
+    }
+}
+
+.wel {
+    margin-top: 10px;
+    text-align: center;
+    color: #0d5744;
+    font-family: algerian;
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: 300;
+}
+
+#btn3 {
+    color:hsl(50, 49%, 88%);
+    background-color: #0d5744;
+    border-radius: 10px 10px 10px 10px;
+    height: 40px;
+}
+
+/* button {
+    border-radius: 10px 10px 10px 10px;
+    height: 40px;
+} */
