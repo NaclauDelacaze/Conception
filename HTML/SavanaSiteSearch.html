@@ -6,35 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Results for </title>
 
-    <link rel="stylesheet" href="Savana.css">
-    <link rel="stylesheet" href="search.css">
+<!-- font awesome cdn link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- custom css file link -->
+<link rel="stylesheet" href="../CSS/SavanaSiteSearch.css">
+<link rel="stylesheet" href="../CSS/SavanaSite-nav.css">
 
 </head>
 <body>
-    
-  <nav class="navbar">
+ <!-- Start of section navbar (the dashboard)-->
+
+ <nav class="navbar">
     <div class="nav">
-        <img src="images/logoO.png" class="brand-logo" alt="">
-         <div class="nav-items">
-         <div class="search">
-            <input type="text" class="search-box" 
-            placeholder="search brand, produits ">
-            <button class="search-btn">search</button>
-         </div>
-         <a href="#"><img src="images/user.png"  alt=""></a>
-         <a href="#"><img src="images/C2.png"  alt=""></a>
-         <a href="#"><img src="images/cart2.png"  alt=""></a>
-         </div>
+        <img src="./images/SavanaLogo.png" class="brand-logo" alt="">
+        <div class="nav-items">
+            <div class="search">
+                <input type="text" class="search-box" 
+                placeholder="Search categories, brands, produits ...">
+                <button class="search-btn">Search</button>
+            </div>
+            <a href="../HTML/SavanaSiteLogin.html"><img src="./images/user.png" alt=""></a>
+            <a href="../HTML/SavanaWishList"><img src="./images/C2.png" alt=""></a>
+            <a href="#"><img src="./images/cart2.png" alt=""></a>
+        </div>
     </div>
     <ul class="links-container">
-         <li class="link-item"><a href="#" class="link">Home</a></li>
-         <li class="link-item"><a href="#" class="link">Clothing</a></li>
-         <li class="link-item"><a href="#" class="link">Cell phone</a></li>
-         <li class="link-item"><a href="#" class="link">Support</a></li>
-         <li class="link-item"><a href="#" class="link">home appliance</a></li>
-         <li class="link-item"><a href="#" class="link">PC</a></li>
+        <li class="link-item"><a href="./index.html" class="link">Home</a></li>
+        <li class="link-item"><a href="./HTML/SavanaClothing.html" class="link">Fashion</a></li>
+        <li class="link-item"><a href="./html/phone.html" class="link">Cell phone</a></li>
+        <li class="link-item"><a href="./html/Support.html" class="link">Household appliance</a></li>
+        <li class="link-item"><a href="./html/homeA.html" class="link">Bedroom</a></li>
+        <li class="link-item"><a href="./html/pc.html" class="link">Computer</a></li>
     </ul>
 </nav>
+<!-- End of section navbar -->
 
     <section class="search-results">
         <h2 class="heading">search results for <span>product</span></h2>

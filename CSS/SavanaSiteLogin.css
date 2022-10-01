@@ -1,0 +1,23 @@
+.container {
+	/* margin: 0 auto; */
+	margin-top: 100px;
+	margin-bottom: 100px;
+	width: 40%;
+	background-color: rgb(23, 109, 87);
+}
+
+.container .label {
+    color: white;
+}
+
+#form {
+	/* margin-top: 10px; */
+	margin-bottom: 20px;
+	/* margin: 50% */
+}
+
+img {
+	margin-top: 30px;
+	background-color: whitesmoke;
+}
+

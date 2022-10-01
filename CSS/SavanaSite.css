@@ -1,6 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 @import '../CSS/SavanaSite-nav.css';
+@import '../SavanaCloting.css';
 @import '../CSS/SavanaSite-footer.css';
 
+
+/* grace au etoile je dis bien que cela s'accorde a toute la page  */
+* {
+    box-sizing: border-box;
+  }
+
+   /* ici c'est le style de toute la page , */
+body {
+    font-family: Times;
+    margin: 0;
+}
 
 .hero-section{
     width: 100%;
@@ -10,14 +23,14 @@
     background-color: hsl(50, 49%, 88%);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center top;
 }
 
 .hero-section .logo{
     height: 150px;
     display: block;
     margin: auto;
-    padding-top: 20px;
+    padding-top: 40px;
     /* background-color: #f8f0c6; */
 }
 
@@ -29,15 +42,16 @@
     text-transform: capitalize;
     font-size: 35px;
     font-weight: 300;
+    text-align: justify;
 }
 
 
 /* Ici, j'utilise un effet d’animation de texte brillant */
 h1 {
     position: relative;
-    font-family:lobster, sans-serif;
+    font-family:Times;
     font-size: 60px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 2px;
     background: linear-gradient(90deg, rgb(23, 109, 87), #fff, rgb(23, 109, 87));
     background-repeat: no-repeat;
@@ -66,9 +80,9 @@ h1 {
 
 .product-category{
     padding: 0 10vw;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 500;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     text-transform: capitalize;
     background: hsl(51, 42%, 87%);
     color :rgb(23, 109, 87);
@@ -100,9 +114,9 @@ h1 {
 /* Ici, j'utilise un effet d’animation de texte brillant */
 p {
     position: relative;
-    font-family: lobster, sans-serif;
-    font-size: 60px;
-    text-transform: uppercase;
+    font-family: Times;
+    font-size: 70px;
+    text-transform: capitalize;
     letter-spacing: 2px;
     background: linear-gradient(90deg, rgb(23, 109, 87), #fff, rgb(23, 109, 87));
     background-repeat: no-repeat;
@@ -157,14 +171,21 @@ of an element's scrollbar when it has */
 
 .discount-tag{
     position: absolute;
-    background: #fff;
+    background: hsl(51, 42%, 87%);
     padding: 5px;
     border-radius: 5px;
-    color: #ff7d7d;
+    color: rgb(23, 109, 87);
     right: 10px;
     top: 10px;
     text-transform: capitalize;
 }
+
+blink {
+    animation: blinker 0.6s linear infinite;
+   }
+  @keyframes blinker {  
+    80% { opacity: 0; }
+   }
 
 /* wish list */
 .card-btn{
@@ -215,6 +236,7 @@ of an element's scrollbar when it has */
 .price{
     font-weight: 900;
     font-size: 20px;
+    color: rgb(23, 109, 87)
 }
 
 .actual-price{
@@ -280,7 +302,7 @@ of an element's scrollbar when it has */
     transform: translate(-50%, -50%);
     text-align: center;
     color: #fff;
-    font-size: 50px;
+    font-size: 70px;
     text-transform: capitalize;
 }
 
@@ -288,3 +310,60 @@ of an element's scrollbar when it has */
       grid-column: span 2;
       margin-bottom: 10px;
 }
+
+.collection:nth-child(3){
+    grid-column: span 2;
+    margin-bottom: 10px;
+}
+
+/* footer */
+/* .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+.footer .box-container{
+    border:.1rem solid rgba(0,0,0,.1);
+    border-radius: .5rem;
+    background:#f9f9f9;
+    padding:2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+  } */
+  
+  /* .footer .box-container .box{
+    flex:1 1 2rem;
+  }
+  
+  .footer .box-container .box h3{
+    color:var(--black);
+    font-size: 2.5rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .footer .box-container .box a{
+    color:#666;
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: block;
+  }
+  
+  .footer .box-container .box a:hover{
+    color:var(--orange);
+  }
+  
+  .footer .box-container .credit{
+    text-align: center;
+    width:100%;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    font-size: 1.5rem;
+    padding:1rem;
+    padding-top: 2rem;
+    color:#999;
+  }
+  
+  .footer .box-container .credit span{
+    color:var(--orange);
+  } */

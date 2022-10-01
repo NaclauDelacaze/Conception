@@ -1,0 +1,204 @@
+*{
+    box-sizing: border-box;
+  }
+
+body{
+  height: 1vh;
+  margin: 0;
+  padding: 0;
+  background: white;
+  /* background: url("../images/SavanaLogo.png") no-repeat center;
+  justify-content:  bottom; 
+  /* align-items: center; */ 
+}
+
+.centerBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}
+
+/* div{
+border-radius: 20px;
+} */
+
+.categoryWrapper{
+  height: 310px;
+  width: 460px;
+  background-image: url("../images/SavanaLogo.png") no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.categoryWrapper:after{
+  position: absolute;
+  top:0;
+  left: 0;
+  right:0;
+  bottom: 0;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a29ca9+0,95909b+99 */
+background: hsl(50, 49%, 88%); /* Old browsers */
+background: -moz-linear-gradient(-45deg, hsl(50, 49%, 88%) 0%, hsl(50, 49%, 88%) 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, hsl(50, 49%, 88%) 0%,hsl(50, 49%, 88%) 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, hsl(50, 49%, 88%) 0%,hsl(50, 49%, 88%) 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='hsl(50, 49%, 88%)', endColorstr='hsl(50, 49%, 88%)',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  content: '';
+  opacity: 0;
+    -webkit-transition: opacity 0.9s ease 0s; 
+}
+
+.categoryWrapper:hover:after{
+  opacity: 0.4;
+}
+
+.categoryWrapper h1{
+  color:#0d5744;
+  font-size: 50px;
+  letter-spacing: 2px;
+  -webkit-transition: all 0.15s ease 0s; 
+  position: relative;
+  z-index: 10;
+}
+
+.categoryWrapper:hover h1{
+  transform: translatey(-10px);
+}
+
+.categoryWrapper button{
+  position: absolute;
+  transform: translatey(60px);
+  -webkit-appearance: none;
+  border: #0d5744;
+  background: none;
+  color:#0d5744;
+  width: 250px;
+  height:50px;
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  z-index: 10;
+}
+
+.categoryWrapper button span{
+  display: block;
+  position: relative;
+  line-height: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.categoryWrapper button > span:after{
+  content:'';
+  position: absolute;
+  top:0;
+  left: 50%;
+  width: 20px;
+  height: 0;
+  
+  border: 2px solid #0d5744;
+  border-left: none;
+  border-bottom: none;
+  
+  transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+}
+
+.categoryWrapper:hover button > span:after{
+  width: calc(50% - 1px);
+  height: calc(100% - 2px);
+  transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+}
+
+.categoryWrapper button > span:before{
+  content:'';
+  position: absolute;
+  top:0;
+  right: 50%;
+  width: 20px;
+  height: 0;
+  
+  border: 2px solid #0d5744;
+  border-right: none;
+  border-bottom: none;
+  
+  transition: height 0.15s ease-out, width 0.15s ease-out 0.15s;
+}
+
+.categoryWrapper:hover button > span:before{
+  width: calc(50% - 1px);
+  height: calc(100% - 2px);
+  transition: width 0.15s ease-out, height 0.15s ease-out 0.15s;
+}
+
+.categoryWrapper button > span > span:before{
+  content:'';
+  position: absolute;
+  bottom:0;
+  right: 0%;
+  width: 2px;
+  height: 2px;
+  opacity: 0;
+  
+}
+
+.categoryWrapper:hover button > span > span:before{
+  opacity: 1;
+  border-bottom: 2px solid #0d5744;
+  width: calc(50%);
+  height: 2px;
+  transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+}
+
+.categoryWrapper button > span > span:after{
+  content:'';
+  position: absolute;
+  bottom:0;
+  left: 0%;
+  width: 2px;
+  height: 2px;
+  opacity: 0;  
+}
+
+.categoryWrapper:hover button > span > span:after{
+  opacity: 1;
+  border-bottom: 2px solid #0d5744;
+  width: calc(50%);
+  height: 2px;
+  transition: opacity 0s ease-out 0.29s, width 0.15s ease-out 0.3s;
+}
+
+.categoryWrapper button > span > span > span{
+  transition: color 0.15s ease-out 0.3s;
+  color: transparent;
+}
+
+.categoryWrapper:hover button > span > span > span{
+  color:#0d5744;
+}
+
+.categoryWrapper button > span > span > span:after{
+  position: absolute;
+  top:0;left:0;right:0;bottom:0;
+  color:white;
+  content: attr(data-attr-span);
+  width: 0%;
+  height: 100%;
+  background:#0d5744;
+  white-space: nowrap;
+  text-align: center;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  transition: width 0.2s;
+}
+
+.categoryWrapper button:hover > span > span > span:after{
+  width: 100%;
+}
+
+
+

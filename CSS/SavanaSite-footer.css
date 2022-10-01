@@ -1,41 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600');
+
 footer{
     position: relative;
-    width: 100%;
-    padding: 40px 10vw;
-    padding-bottom: 80px;
+    padding: 10px;
+    /* background-image: url('./images/Savanalogo.png'); */
+    /* background:#ffffff; */
+    /* padding-bottom: 50px; */
+    text-align: center;
     background: hsl(51, 42%, 87%);
 }
 
 .footer-content{
+    border:.1rem solid rgb(23, 109, 87);
+    border-radius: .5rem;
+    background-image: url('./images/Savanalogo.png');
+    background:#baf2fa;
+    padding: 2rem;
     display: flex;
+    flex-wrap: wrap;
+    grid-row-gap:1.5rem;
+    
+}
+
+img {
+  margin: 0;
+}
+
+footer .footer-container {
+    flex:1 1 5rem;
+  }
+
+/* .footer-content .logo{
+    height: 100%;
     width: 100%;
-    justify-content: space-between;
+    display: block;
+    margin: auto;
+    padding: auto;
+    
+} */
+
+/* Image floutée du Logo en Background */
+.footer .logo .blur {
+	height: 100%;
+  width: 100%;
+  background-size: cover;
+  display: block;
+  margin: auto;
+  padding: auto;
+	position: relative;
+	background: transparent url(./images/Savanalogo.png) 3px 3px no-repeat;
+	opacity: .9;
 }
 
-.footer-content .logo{
-    height: 160px;
+.blur:before, .blur:after {
+	content: url(./images/Savanalogo.png);
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: .4;
+	padding: 0;
+	background: transparent url(./images/Savanalogo.png) 4px 1px no-repeat;
+}
+.blur:after {
+	padding: 0;
+	background-position: 1px 4px;
+}
+.blur img {
+	display: block;
+	padding: 0;
+	background: transparent url(./images/Savanalogo.png) 5px 5px no-repeat;
+	background: url(./images/Savanalogo.png) 5px 5px no-repeat, url(./images/Savanalogo.png) 5px 0 no-repeat, url(./images/Savanalogo.png) 4px 4px no-repeat, transparent url(./images/Savanalogo.png) 2px 1px no-repeat;
+	opacity: .4;
+}
+.blur:hover, .blur:hover img {
+	background: none;
+	opacity: 1;
+	padding: 1px 1px 2px 2px;
+}
+.blur:hover:before, .blur:hover:after {
+	display: none;
 }
 
-.footer-ul-container{
-    width: 45%;
-    display: flex;
-    justify-content: space-between;
+/* Fin du floutage de l'image du Logo en Background */
+
+footer .footer-container h3{
+    color:rgb(23, 109, 87);
+    font-size: 2rem;
+    padding-bottom: 1rem;
 }
 
-.category{
-    width: 200px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    list-style: none;
+footer .footer-container a {
+    color:rgb(23, 109, 87);
+    font-size: 1rem;
+    padding-bottom: 1.5rem;
+    display: block;
 }
 
-.category-title{
-    grid-column: span 2;
+.footer-content .category-title{
+    grid-column: span 3;
     text-transform: capitalize;
     color: rgb(23, 109, 87);
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 30px;
+    margin-bottom: 2px;
 }
 
 .category .footer-link{
@@ -62,14 +128,15 @@ footer{
 
 /* Start of sociaux media footer */
 .footer-social-container{
-    margin-top: 40px;
+    margin-top: 10px;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 }
 
 .social-link{
     color: rgb(23, 109, 87);
-    margin-left: 20px;
+    margin: 0;
     text-transform: capitalize;
 }
 
@@ -90,5 +157,127 @@ footer{
     bottom: 0;
     text-align: center;
     color: rgb(23, 109, 87);
-    background: #f8f0c6;
+    background: hsl(51, 42%, 87%);
 }
+
+/* Boutton avec effet gluant qui laisse déguliner les icônes des réseaux sociaux et autres contacts */
+
+footer .container {
+  font-family: 'Source Sans Pro', sans-serif;
+  background: linear-gradient(rgb(23, 109, 87), hsl(166, 33%, 59%), rgb(23, 109, 87));
+  background: hsl(51, 42%, 87%);
+  overflow: hidden;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+ }
+ 
+ .footer-content .container {
+   display:flex;
+   align-content: center; 
+   justify-content: center;
+   align-items: center; 
+   height: 50vh;
+   filter:url('#goo');
+   background-color: #baf2fa;
+ }
+ 
+ .button {
+   z-index: 99;
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 150px;
+   height: 50px;
+   background: linear-gradient(45deg, hsl(166, 31%, 56%), rgb(23, 109, 87));
+   border-radius: 30px;
+   color: #FFF;
+   font-size: 30px;
+   letter-spacing: 1px;
+   font-weight: 200;
+ }
+ 
+ .social {
+   opacity: 0;
+   position: relative;
+   margin: 8px;
+   width: 40px;
+   height: 40px;
+   border-radius: 100%;
+   display: inline-block;
+   color: #FFF;
+   font-size: 20px;
+   text-align: center;
+}
+
+i {
+    margin-top: 10px;
+  }
+
+   
+a {
+     color: #FFF;
+  }
+
+.email {
+    background: #00aced;
+  }
+
+.music {
+    background: hsl(196, 37%, 66%);
+  }
+
+.telephone {
+    background: gray;
+  }
+
+.twitter {
+   background: #00aced;
+  }
+ 
+.facebook {
+   background: #3b5998;
+  }
+ 
+ .google {
+   background: #dd4b39;
+ }
+ 
+ .youtube {
+   background: #bb0000;
+ }
+
+ .linkedin {
+  background: #00aced;
+}
+
+.whatsapp {
+  background: rgb(66, 176, 66);
+}
+
+.instagram {
+  background: red;
+}
+
+.tiktok {
+  background: hsl(0, 2%, 20%);
+}
+
+.telegram {
+  background: #4e91e9
+}
+
+.snapchat {
+  background: yellow;
+}
+
+.likee {
+  background: linear-gradient(45deg, purple, red, rgb(211, 140, 8),#e7a529); 
+}
+ 
+ .clicked {
+   opacity: 1;
+   transition: 1.2s all ease;
+   transform: translateY(56px);
+ }
